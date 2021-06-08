@@ -4,10 +4,10 @@ $(document).ready( function () {
     $('#table_id').DataTable();
 } );
 
-function Change(){
-    var a=document.getElementById('select_parameter').value;     
-    document.getElementById('nama_parameter').value= a;
-}
+// function Change(){
+//     var a=document.getElementById('select_parameter').value;     
+//     document.getElementById('nama_parameter').value= a;
+// }
 </script>
 <script type="text/javascript">
   $(document).on("click",'#btnEdit',function(){

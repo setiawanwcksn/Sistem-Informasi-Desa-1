@@ -32,8 +32,13 @@
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title"><b>Dokumen</b></h5>
-									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-									<a href="<?php echo base_url("Dokumen")?>" class="btn btn-primary">Dokumen</a>
+									<p class="card-text"></p>
+									<a href="<?php echo base_url("Dokumen")?>" 
+									<?php if ($Jabatan == 'Kaur Perencanaan' || $Jabatan == 'Sekretaris Desa' || $Jabatan == 'Admin'){ ?> 
+										class="btn btn-primary" 
+									<?php }else {?>
+										class="btn btn-secondary disabled" <?php } ?>
+									>Dokumen</a>
 								</div>
 							</div>
 						</div>
@@ -41,8 +46,13 @@
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title"><b>Perangkat Desa</b></h5>
-									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-									<a href="<?php echo base_url("PerangkatDesa")?>" class="btn btn-primary">Perangkat Desa</a>
+									<p class="card-text"></p>
+									<a href="<?php echo base_url("PerangkatDesa")?>"
+									<?php if ($Jabatan == 'Sekretaris Desa' || $Jabatan == 'Admin'){ ?> 
+										class="btn btn-primary" 
+									<?php }else {?>
+										class="btn btn-secondary disabled" <?php } ?>
+									>Perangkat Desa</a>
 								</div>
 							</div>
 						</div>
@@ -50,8 +60,12 @@
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title"><b>Parameter</b></h5>
-									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-									<a href="<?php echo base_url("Parameter")?>" class="btn btn-primary">Parameter</a>
+									<p class="card-text"></p>
+									<a href="<?php echo base_url("Parameter")?>"
+									<?php if ($Jabatan == 'Sekretaris Desa' || $Jabatan == 'Admin'){ ?> 
+										class="btn btn-primary" 
+									<?php }else {?>
+										class="btn btn-secondary disabled" <?php } ?>>Parameter</a>
 								</div>
 							</div>
 						</div>
@@ -59,8 +73,13 @@
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title">PENERIMAAN </h5>
-									<p class="card-text">PENERIMAAN</p>
-									<a href="<?php echo site_url('Penerimaan')?>" class="btn btn-primary">PENERIMAAN</a>
+									<p class="card-text"></p>
+									<a href="<?php echo site_url('Penerimaan')?>"
+									<?php if ($Jabatan == 'Kaur Keuangan' || $Jabatan == 'Admin'){ ?> 
+										class="btn btn-primary" 
+									<?php }else {?>
+										class="btn btn-secondary disabled" <?php } ?>
+									>PENERIMAAN</a>
 								</div>
 							</div>
 						</div>
@@ -68,8 +87,13 @@
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title">PENGELUARAN</h5>
-									<p class="card-text">PENGELUARAN</p>
-									<a href="<?php echo site_url('pengeluaran')?>" class="btn btn-primary">PENGELUARAN</a>
+									<p class="card-text"></p>
+									<a href="<?php echo site_url('pengeluaran')?>"
+									<?php if ($Jabatan == 'Kaur Keuangan' || $Jabatan == 'Admin'){ ?> 
+										class="btn btn-primary" 
+									<?php }else {?>
+										class="btn btn-secondary disabled" <?php } ?>
+									>PENGELUARAN</a>
 								</div>
 							</div>
 						</div>
@@ -77,8 +101,13 @@
 							<div class="card">
 								<div class="card-body">
 									<h5 class="card-title"><b>Laporan</b></h5>
-									<p class="card-text">Laporan</p>
-									<a href="<?php echo site_url('laporan')?>" class="btn btn-primary">Laporan</a>
+									<p class="card-text"></p>
+									<a href="<?php echo site_url('laporan')?>"
+									<?php if ($Jabatan == 'Kaur Keuangan' || $Jabatan == 'Kepala Desa' || $Jabatan == 'Admin'){ ?> 
+										class="btn btn-primary" 
+									<?php }else {?>
+										class="btn btn-secondary disabled" <?php } ?>
+									>Laporan</a>
 								</div>
 							</div>
 						</div>

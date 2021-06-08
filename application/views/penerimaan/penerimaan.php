@@ -30,10 +30,10 @@
             </p>
             <p>
                 <label for="">ID Parameter</label>
-                <select id="select_parameter" name="id_parameter" onChange="Change()">
+                <select id="nama_parameter" name="nama_parameter">
                 <option disabled selected> Select ID Parameter</option>
                   <?php foreach ($dataParameter as $parameter): ?>
-                    <option value="<?php echo $parameter['Nama_Parameter']?>"> <?php echo $parameter['Id_Parameter'] ?> </option>
+                    <option value="<?php echo $parameter['Nama_Parameter']?>"> <?php echo $parameter['Id_Parameter'] ?>. <?php echo $parameter['Nama_Parameter']?> </option>
                   <?php endforeach;?>
                 </select>
             </p>
@@ -42,7 +42,7 @@
                 <input type="date" name="tanggal_penerimaan" id="tanggal_penerimaan">
             </p>
             <p>           
-                <input type="text" id="nama_parameter" name="nama_parameter" placeholder="Nama Parameter" readonly>
+                
             </p>
             <p>
             <label for="">Nominal</label>

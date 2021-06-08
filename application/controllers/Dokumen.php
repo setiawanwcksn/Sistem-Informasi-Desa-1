@@ -13,7 +13,7 @@ class Dokumen extends CI_Controller {
   /* function index merupakan fungsi default yang dijalankan disaat Class Dokumen Dijalankan */
 	public function index()
 	{
-    // Data Session
+    	// Data Session
     $data['Id_PD'] = $this->session->userdata('Id_PD'); 
     $data['Nama'] = $this->session->userdata('Nama'); 
     $data['Jabatan'] = $this->session->userdata('Jabatan'); 
@@ -54,8 +54,8 @@ class Dokumen extends CI_Controller {
 
         if($this->upload->do_upload('image') || $response){
           
-        $id=$this->input->post("id_dokumen");   
-        if($this->upload->data('file_name')){          
+        $id=$this->input->post("id_dokumen");          
+        if($this->upload->data('file_name')){
           $input=[
             'Id_Dok'=>$this->input->post("id_dokumen"),
             'Nama_Dokumen'=>$this->input->post("nama_dokumen"),
@@ -73,7 +73,7 @@ class Dokumen extends CI_Controller {
             mengarahkan kemodel MDokumen dan diarahkan ke fungsi save
           */
           $response=$this->MDokumen->save($id,$input);
-            if($response){
+            if($this->upload->data('file_name')){
               // print_r($response->File_Name);die;
               $this->deletedFile($response);
               redirect("Dokumen");
@@ -111,7 +111,8 @@ class Dokumen extends CI_Controller {
     /* 
       fungsi download merupakan fungsi yang mengatur agar file dapat didownload melalui browser
     */
-    public function download($fileName){      
+    public function download($fileName){
+      var_dump($fileName);
         $file='./upload/dokumen/'.$fileName;
         force_download($file,NULL);
     }

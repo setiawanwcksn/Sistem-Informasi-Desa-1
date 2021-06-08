@@ -38,7 +38,7 @@
 								enctype="multipart/form-data">
 								<div class="form">
 									<p>
-										<label for="">Periode Awal</label>
+										<label for="">Periode Akhir</label>
 										<input type="date" name="tanggal_awal">
 									</p>
 									<p>
