@@ -15,9 +15,10 @@
             </ul>
           </div>
         </div>
+        <h4 class="text-center mt-4" style="margin-left:80px"><b>Pengeluaran</b></h4>
         <div style="clear:both"></div>
-        <h4 class="text-center"><b>Pengeluaran</b></h4>      
-      <div class="row">
+        
+      <div class="row mt-4">
       <div class="contain">
         <div class="wrapper">         
             <form id="form-dokumen" action="<?php echo base_url('Pengeluaran/form')?>" method="POST" enctype="multipart/form-data">
