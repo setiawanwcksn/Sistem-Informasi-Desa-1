@@ -48,10 +48,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<table border="1" cellspacing="0" cellpadding="5" width="100%">
 		<thead>
             <tr class="text-center">
-                <th>No Urut</th>
-                <th>Uraian</th>
+                <th>No </th>
+                <th>Parameter</th>
                 <th>Kode Penerimaan</th>
-                <th>Tgl input</th>      
+                <th>Tanggal</th>      
                 <th>Nominal</th>      
             </tr>
 		</thead>
@@ -84,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
       <div class="right">
         <div class="text-center">
-                <p>Sleman, <?php echo date('d F Y')?></p>
+                <p>Purworejo, <?php echo date('d F Y')?></p>
                 <p>Bendahara Kedung Pomahan Wetan,</p>
           </div>
           <div class="text-center" style="margin-top:100px">

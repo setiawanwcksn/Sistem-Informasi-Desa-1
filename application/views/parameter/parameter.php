@@ -26,7 +26,7 @@
             <form id="form-parameter" action="<?php echo base_url('Parameter/formParameter')?>" method="POST" enctype="multipart/form-data">
               <div class="mb-2">
                 <label for="id_parameter" class="form-label">ID Parameter</label>
-                <input type="number" class="form-control" id="id_parameter" name="id_parameter" required >
+                <input type="text" class="form-control" id="id_parameter" name="id_parameter" required >
               </div>
               <div class="mb-2">
                 <label for="nama_parameter" class="form-label" >Nama Parameter</label>
@@ -66,17 +66,17 @@
                           <th>Action</th>
                           
                     </tr>
-                  </thead>
-                <?php $i=1; foreach ($dataParameter as $item): ?>
+                  </thead>                
                   <tbody>
+                  <?php $i=1; foreach ($dataParameter as $item): ?>
                       <tr class="text-center">
                           <td><?php echo $i++?></td>
                           <td><?php echo $item["Id_Parameter"]?></td>
                           <td><?php echo $item["Nama_Parameter"]?></td>   
                           <td><button class="btnEdits" data-id="<?php echo $item["Id_Parameter"] ?>" data-nama="<?php echo $item["Nama_Parameter"] ?>">Edit</button></td>    
                       </tr>
-                  </tbody>
-                  <?php endforeach;?> 
+                      <?php endforeach;?> 
+                  </tbody>                  
               </table>
             </div>
         </div>

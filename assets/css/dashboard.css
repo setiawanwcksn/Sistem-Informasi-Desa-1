@@ -1,3 +1,14 @@
 .wrap{
   padding-top: 10%;
 }
+
+.card-image{
+  background-image: url("../logo-kabupaten-purworejo.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.card{
+  background-color: #ffffff85;
+}

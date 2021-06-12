@@ -10,9 +10,7 @@
               <i class="fas fa-user-tie fa-2x"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
+
               <li><a class="dropdown-item" href="<?php echo site_url('Login/LogOut')?>">Log Out</a></li>
             </ul>
           </div>
@@ -29,9 +27,9 @@
                 <input type="text" name="id_pengeluaran" id="id_pengeluaran">
             </p>
             <p>
-                <label for="">ID Parameter</label>
+                <label for=""> Parameter</label>
                 <select id="nama_parameter" name="nama_parameter">
-                <option disabled selected> Select ID Parameter</option>
+                <option disabled selected> Select  Parameter</option>
                   <?php foreach ($dataParameter as $parameter): ?>
                     <option value="<?php echo $parameter['Nama_Parameter']?>"> <?php echo $parameter['Id_Parameter'] ?>. <?php echo $parameter['Nama_Parameter']?> </option>
                   <?php endforeach;?>
