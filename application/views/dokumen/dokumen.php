@@ -10,17 +10,15 @@
               <i class="fas fa-user-tie fa-2x"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
+
               <li><a class="dropdown-item" href="<?php echo site_url('Login/LogOut')?>">Log Out</a></li>
             </ul>
           </div>
         </div>
-        <div style="clear:both"></div>
-        <h4 class="text-center"><b>Dokumen</b></h4>
+        <h4 class="text-center mt-4" style="margin-left:80px"><b>Dokumen</b></h4>
+        <div style="clear:both"></div>        
       
-      <div class="row">
+      <div class="row mt-4">
         <div class="col">
           <div class="wrapping-content">
             <form id="form-dokumen" action="<?php echo base_url('Dokumen/formDokumen')?>" method="POST" enctype="multipart/form-data">
@@ -56,7 +54,7 @@
         </div>
         <hr>
         <div>
-          <h4 class="text-center"><b>Table Document</b></h4>
+          <h4 class="text-center"><b>Tabel Dokumen</b></h4>
         </div>
         <div class="wrapping-content">
           <div class="container">

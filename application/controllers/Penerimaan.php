@@ -21,6 +21,7 @@ class Penerimaan extends CI_Controller {
             $data['content']="penerimaan/penerimaan";	
             $data['footer']="template/template_footer.php";	
             $data['dataPenerimaan'] = $this->MPenerimaan->getAll();
+            // echo '<pre>'; print_r($data['dataPenerimaan']);die;
             $data['dataParameter'] = $this->MParameter->getAll();    
             $this->load->view('template/vtemplate',$data);  
         } else {
@@ -40,7 +41,7 @@ class Penerimaan extends CI_Controller {
                 'Id_Penerimaan ' => $id_penerimaan,
                 'Tanggal_Penerimaan' => $tanggal_penerimaan,
                 'Nominal' => $nominal,
-                'fk_Parameter' => $this->MParameter->getIdParameter($nama_parameter),
+                'Id_Parameter' => $this->MParameter->getIdParameter($nama_parameter),
                 'fk_PD' => $this->session->userdata('Id_PD')
             ];
             // print_r($data_penerimaan);die;

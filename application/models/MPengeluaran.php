@@ -5,7 +5,7 @@ class MPengeluaran extends CI_Model {
     public function getAll(){
       $this->db->select('*');
       $this->db->from('Pengeluaran');
-      $this->db->join('parameter','parameter.Id_Parameter = Pengeluaran.fk_parameter');      
+      $this->db->join('parameter','parameter.Id_Parameter = Pengeluaran.Id_Parameter');      
       $query = $this->db->get()->result_array();
       return $query;
       }
@@ -31,7 +31,7 @@ class MPengeluaran extends CI_Model {
       function getDataPengeluaran($tgl_awal,$tgl_akhir){
         $this->db->select('*');
         $this->db->from('Pengeluaran');
-        $this->db->join('parameter','parameter.Id_Parameter = Pengeluaran.fk_parameter'); 
+        $this->db->join('parameter','parameter.Id_Parameter = Pengeluaran.Id_Parameter'); 
         $this->db->where('Tanggal_Pengeluaran >=',$tgl_awal);
         $this->db->where('Tanggal_Pengeluaran <=',$tgl_akhir);
         $this->db->order_by("Tanggal_Pengeluaran","ASC");

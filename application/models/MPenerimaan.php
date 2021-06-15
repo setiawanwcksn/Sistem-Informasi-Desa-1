@@ -5,7 +5,7 @@ class MPenerimaan extends CI_Model {
     public function getAll(){
       $this->db->select('*');
       $this->db->from('Penerimaan');
-      $this->db->join('parameter','parameter.Id_Parameter = Penerimaan.fk_parameter');      
+      $this->db->join('parameter','parameter.Id_Parameter = Penerimaan.Id_Parameter');      
       $query = $this->db->get()->result_array();
       return $query;
       }
@@ -30,7 +30,7 @@ class MPenerimaan extends CI_Model {
       function getDataPenerimaan($tgl_awal,$tgl_akhir){
         $this->db->select('*');
         $this->db->from('Penerimaan');
-        $this->db->join('parameter','parameter.Id_Parameter = Penerimaan.fk_parameter'); 
+        $this->db->join('parameter','parameter.Id_Parameter = Penerimaan.Id_Parameter'); 
         $this->db->where('Tanggal_Penerimaan >=',$tgl_awal);
         $this->db->where('Tanggal_Penerimaan <=',$tgl_akhir);
         $this->db->order_by("Tanggal_Penerimaan","ASC");

@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 	<h2 ><center>Kas Umum Desa Kedung Pomahan Wetan</center></h2>
-	<h2 style="margin-bottom:30px"><center>Periode <?php echo date('d F Y', strtotime($tanggalAwal)) ." - ". date('d F Y', strtotime($tanggalAkhir)) ;?></center></h2>
+	<h2 style="margin-bottom:30px"><center>Periode <?php echo format_indo(date('Y-m-d', strtotime($tanggalAwal))) ." - ". format_indo(date('Y-m-d', strtotime($tanggalAkhir))) ;?></center></h2>
 	<table border="1" cellspacing="0" cellpadding="5" width="100%">
 		<thead>
             <tr class="table text-center">
@@ -77,13 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <?php endforeach;?>
             </tbody>
 	</table>
-    <table style="margin-top:50px" border="1" cellspacing="0" cellpadding="5" width="100%">
-        <thead>
-         <tr style="border:none">
-            <th></th>
-            <th></th>
-         </tr>
-          </thead>
+    <table style="margin-top:50px" border="1" cellspacing="0" cellpadding="5" width="100%">       
         <tbody>
           <tr>
               <td>Rekap Bulan <?php echo $beforeMonth ?></td>
@@ -94,14 +88,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <td><?php echo "Rp. " ; echo number_format($totNomBulSekarang, 2, ",", ".") ?></td>
           </tr>
           <tr>
-              <td>Rekap Mulai <?php echo date('d F Y', strtotime($tanggalAwal)) ." - ". date('d F Y', strtotime($tanggalAkhir))  ?> </td>
+              <td>Rekap Mulai <?php echo format_indo(date('Y-m-d', strtotime($tanggalAwal))) ." - ". format_indo(date('Y-m-d', strtotime($tanggalAkhir))) ?> </td>
               <td><b><?php echo "Rp. " ; echo number_format($totSesuaiTanggal, 2, ",", ".") ?></b></td>
           </tr>
           
           </tbody>
     </table>
   </center>
-  <div class="wrap" style="margin-top:20px">
+  <div class="wrap">
       <div class="left">
         <div class="text-center">
               <p>Mengetahui,</p>
@@ -112,12 +106,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
       <div class="right">
-        <div class="text-center">
-                <p>Purworejo, <?php echo date('d F Y')?></p>
-                <p>Bendahara Kedung Pomahan Wetan,</p>
+          <div class="text-center">
+                <p>Purworejo, <?php echo format_indo(date('Y-m-d'));?></p>
+                <p>Sekretaris Desa,</p>
           </div>
           <div class="text-center" style="margin-top:100px">
-                <p><?php echo $bendahara?></p>
+                <p><?php echo $Sekretaris?></p>
           </div>
       </div>
       <div class="clc"></div>

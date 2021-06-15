@@ -17,13 +17,14 @@
               </ul>
             </div>
           </div>
+          <h4 class="text-center mt-4" style="margin-left:80px"><b>Perangkat Desa</b></h4>
           <div style="clear:both"></div>
-          <h4 class="text-center"><b>Perangkat Desa</b></h4>
+          
           <div class="wrapping-content">
             
 
               <form id="form-perangkat" action="<?php echo base_url('PerangkatDesa/formPerangkat')?>" method="POST" enctype="multipart/form-data">
-              <div class="row">
+              <div class="row mt-4">
                   <div class="col">
                     <div class="mb-3">
                       <label for="id_PD" class="form-label" >ID PD</label>
@@ -83,9 +84,9 @@
                           <th>Password</th>
                           <th>Action</th>
                     </tr>
-                  </thead>
-                <?php $i=1; foreach ($dataPerangkat as $item): ?>
+                  </thead>                
                   <tbody>
+                  <?php $i=1; foreach ($dataPerangkat as $item): ?>
                       <tr class="text-center">
                           <td><?php echo $i++?></td>
                           <td><?php echo $item["Id_PD"]?></td>
@@ -105,8 +106,8 @@
                           >
                           Edit</button></a></td>    
                       </tr>
+                      <?php endforeach;?> 
                   </tbody>
-                  <?php endforeach;?> 
               </table>
             </div>
     </div>

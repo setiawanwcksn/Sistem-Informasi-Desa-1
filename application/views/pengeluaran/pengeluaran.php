@@ -51,13 +51,13 @@
             <center>
             <div class="tombol">
                 <p>
-                    <button>Kembali</button>
+                    <button class="btn btn-secondary">Kembali</button>
                 </p>
                 <p>
-                    <button type="submit" name="submit" value="Simpan">Simpan</button>
+                    <button type="submit" name="submit" value="Simpan" class="btn btn-primary">Simpan</button>
                 </p>
                 <p>
-                    <button type="submit" name="submit" value="Hapus">Hapus</button>
+                    <button type="submit" name="submit" value="Hapus" class="btn btn-danger">Hapus</button>
                 </p>
             </div></center>
             </form>      
@@ -66,7 +66,7 @@
         </div>
         <hr>
         <div>
-          <h4 class="text-center"><b>Table Document</b></h4>
+          <h4 class="text-center"><b>Tabel Pengeluaran</b></h4>
         </div>
         <div class="wrapping-content">
           <div class="container">

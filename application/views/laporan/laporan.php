@@ -12,11 +12,8 @@
 							<i class="fas fa-user-tie fa-2x"></i>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
+						
+							
 							<li><a class="dropdown-item" href="<?php echo site_url('Login/LogOut')?>">Log Out</a></li>
 						</ul>
 					</div>
@@ -44,7 +41,7 @@
 										<input type="date" name="tanggal_awal">
 									</p>
 									<p>
-										<label for="">periode akhir</label>
+										<label for="">Periode Akhir</label>
 										<input type="date" name="tanggal_akhir">
 										</select>
 									</p>

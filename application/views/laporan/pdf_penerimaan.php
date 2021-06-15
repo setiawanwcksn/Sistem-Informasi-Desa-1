@@ -44,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 	<h2 ><center>Laporan Penerimaan Desa Kedung Pomahan Wetan</center></h2>
-    <h2 style="margin-bottom:30px"><center>Periode <?php echo date('d F Y', strtotime($tanggalAwal)) ." - ". date('d F Y', strtotime($tanggalAkhir)) ;?></center></h2>
+    <h2 style="margin-bottom:30px"><center>Periode <?php echo format_indo(date('Y-m-d', strtotime($tanggalAwal))) ." - ". format_indo(date('Y-m-d', strtotime($tanggalAkhir))) ;?></center></h2>
 	<table border="1" cellspacing="0" cellpadding="5" width="100%">
 		<thead>
             <tr class="text-center">
@@ -84,11 +84,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
       <div class="right">
         <div class="text-center">
-                <p>Purworejo, <?php echo date('d F Y')?></p>
-                <p>Bendahara Kedung Pomahan Wetan,</p>
+                <p>Purworejo, <?php echo format_indo(date('Y-m-d'));?></p>
+                <p>Sekretaris Desa,</p>
           </div>
           <div class="text-center" style="margin-top:100px">
-                <p><?php echo $bendahara?></p>
+                <p><?php echo $Sekretaris?></p>
           </div>
       </div>
       <div class="clc"></div>

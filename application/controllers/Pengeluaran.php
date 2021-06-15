@@ -41,7 +41,7 @@ class Pengeluaran extends CI_Controller {
                 'Id_Pengeluaran ' => $id_pengeluaran,
                 'Tanggal_Pengeluaran' => $tanggal_pengeluaran,
                 'Nominal' => $nominal,
-                'fk_Parameter' => $this->MParameter->getIdParameter($nama_parameter),
+                'Id_Parameter' => $this->MParameter->getIdParameter($nama_parameter),
                 'fk_PD' => $this->session->userdata('Id_PD')
             ];
             // print_r($data_penerimaan);die;

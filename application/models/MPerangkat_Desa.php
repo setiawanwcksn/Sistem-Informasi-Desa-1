@@ -44,10 +44,10 @@ class MPerangkat_Desa extends CI_Model {
         $query=$this->db->get()->row();
         return $query;
     }
-    function cariBendahara(){
+    function cariSekretaris(){
         $this->db->select('*');
         $this->db->from('perangkat_desa');
-        $this->db->where('Jabatan',"bendahara");
+        $this->db->where('Jabatan',"Sekretaris Desa");
         $query=$this->db->get()->row();
         return $query;
     }

@@ -17,10 +17,10 @@
             </ul>
           </div>
         </div>
-        <div style="clear:both"></div>
-        <h4 class="text-center"><b>Parameter</b></h4>
+        <h4 class="text-center mt-4" style="margin-left:80px"><b>Parameter</b></h4>
+        <div style="clear:both"></div>        
       
-      <div class="row">
+      <div class="row mt-4">
         <div class="col">
           <div class="wrapping-content">
             <form id="form-parameter" action="<?php echo base_url('Parameter/formParameter')?>" method="POST" enctype="multipart/form-data">
@@ -52,7 +52,7 @@
         </div>
         <hr>
         <div>
-          <h4 class="text-center"><b>Table Document</b></h4>
+          <h4 class="text-center"><b>Tabel Parameter</b></h4>
         </div>
         <div class="wrapping-content">
           <div class="container">

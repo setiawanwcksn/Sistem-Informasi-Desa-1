@@ -50,12 +50,13 @@ class Laporan extends CI_Controller {
                     $data['kepalaDesa']="";
                 }
                 
-                $bendahara=$this->MPerangkat_Desa->cariBendahara();
+                $Sekretaris=$this->MPerangkat_Desa->cariSekretaris();                
                 if($kepalaDesa){
-                    $data['bendahara']=$bendahara->Nama;
+                    $data['Sekretaris']=$Sekretaris->Nama;
                 }else{
-                    $data['bendahara']="";
+                    $data['Sekretaris']="";
                 }
+                // print_r($data['Sekretaris']);die;
             $this->load->library('pdf');
             $this->pdf->setPaper('A4', 'landscape');
             $this->pdf->filename = "Laporan Penerimaan.pdf";
@@ -80,11 +81,11 @@ class Laporan extends CI_Controller {
                     $data['kepalaDesa']="";
                 }
                 
-                $bendahara=$this->MPerangkat_Desa->cariBendahara();
+                $Sekretaris=$this->MPerangkat_Desa->cariSekretaris();
                 if($kepalaDesa){
-                    $data['bendahara']=$bendahara->Nama;
+                    $data['Sekretaris']=$Sekretaris->Nama;
                 }else{
-                    $data['bendahara']="";
+                    $data['Sekretaris']="";
                 }
             $this->load->library('pdf');
             $this->pdf->setPaper('A4', 'landscape');
@@ -126,11 +127,11 @@ class Laporan extends CI_Controller {
                     $data['kepalaDesa']="";
                 }
                 
-                $bendahara=$this->MPerangkat_Desa->cariBendahara();
+                $Sekretaris=$this->MPerangkat_Desa->cariSekretaris();
                 if($kepalaDesa){
-                    $data['bendahara']=$bendahara->Nama;
+                    $data['Sekretaris']=$Sekretaris->Nama;
                 }else{
-                    $data['bendahara']="";
+                    $data['Sekretaris']="";
                 }
                 
 
@@ -159,7 +160,7 @@ class Laporan extends CI_Controller {
     function month($month){
         switch ($month) {
             case 1:
-                $bulan="January";
+                $bulan="Januari";
                 return $bulan;
                 break;
             
